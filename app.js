@@ -40,13 +40,10 @@ yesBtn.addEventListener("click", () => {
 });
 
 document.getElementById("submitBtn").addEventListener("click", async () => {
-    const date = document.getElementById("date").value;
+    const date = dateInput.value;
     const time = document.getElementById("time").value;
-
-    if (!date || !time) {
-        alert("Choisis une date et une heure ! 😊");
-        return;
-    }
+    
+    if (!date || !time) return alert("Choisis une date et une heure ! 😊");
 
     try {
         await fetch("/api/notify", {
