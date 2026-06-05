@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #b2ebf2 0%, #4dd0e1 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    color: #006064;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 4px solid #ffffff;
+    max-width: 400px;
+}
+
+h1 { color: #006064; }
+
+.buttons {
+    margin-top: 30px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#yesBtn { background: #00bcd4; color: white; box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3); }
+#yesBtn:hover { background: #00acc1; } /* On retire le scale fixe du hover pour ne pas interférer avec le JS */
+#noBtn { background: #cfd8dc; color: #546e7a; transition: all 0.3s ease; z-index: 10; }
+
+.hidden { display: none; }
+
+#dateForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+input { padding: 10px; border-radius: 10px; border: 2px solid #b2ebf2; width: 100%; outline: none; }
+#submitBtn { background-color: #0097a7; color: white; width: 100%; margin-top: 10px; }
+#submitBtn:hover { background-color: #00838f; }
